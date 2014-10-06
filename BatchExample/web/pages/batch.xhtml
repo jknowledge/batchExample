@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
+	<head jsf:id="head">
+		<title>Batch Beispiel</title>
+	</head>
+	<body jsf:id="body">
+  		<form jsf:id="form">
+  			<h3>Batch Beispiel</h3>
+		  	<div>
+				<label>
+		  			<span>Job Execution ID:</span>
+		  		</label>
+		  		<label jsf:id="jobId" jsf:value="#{jobExecutionBean.jobId}" />
+			</div>
+		  	<div>
+		    	<button jsf:action="#{jobExecutionBean.actionStartJob}">Start Job</button>
+		    	<button style="margin-left:10px;" jsf:action="#{jobExecutionBean.actionRestartJob}">Restart Job</button>
+		    </div>
+	  	</form>
+	</body>
+</html>

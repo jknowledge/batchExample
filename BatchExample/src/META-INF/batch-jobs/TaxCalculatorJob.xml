@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job id="TaxCalculatorJob" xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="1.0">
+    <step id="process">
+        <chunk item-count="2">
+            <reader ref="de.jknowledge.batchexample.batch.Reader"/>
+            <processor ref="de.jknowledge.batchexample.batch.Processor"/>
+            <writer ref="de.jknowledge.batchexample.batch.Writer"/>
+        </chunk>
+    </step>
+</job>
