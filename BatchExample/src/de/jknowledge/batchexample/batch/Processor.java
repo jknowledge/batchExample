@@ -21,5 +21,4 @@ public class Processor implements ItemProcessor {
 		
 		return bruttoObj;
 	}
-
 }
